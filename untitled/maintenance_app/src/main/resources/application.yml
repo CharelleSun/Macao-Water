@@ -1,22 +1,22 @@
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://172.19.26.4:33060/test2025?serverTimezone=GMT%2B8&autoReconnect=true
-    username: internship
-    password: vQW69#3aLnE#O
+    driver-class-name: ***********driver-class-name************
+    url: *********URL***********
+    username: ****USERNAME****
+    password: *****PASSWORD*****
     hikari:
-      connectionTestQuery: select 1
-      connection-timeout: 300000
-      idle-timeout: 15000
-      max-lifetime: 35000
-      validation-timeout: 300000
-      maximum-pool-size: 20
-      minimum-idle: 2
+      connectionTestQuery: ***********
+      connection-timeout: ************
+      idle-timeout: **********
+      max-lifetime: *********
+      validation-timeout: ********
+      maximum-pool-size: **********
+      minimum-idle: *************
 mybatis-plus:
   configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: 
 app:
   verification:
-    enabled: true # 是否启用验证功能
+    enabled: 
   admin:
-    email: gy.wu@macaowater.com # 管理员邮箱
+    email: *********ADMINEMAIL********* # 管理员邮箱
