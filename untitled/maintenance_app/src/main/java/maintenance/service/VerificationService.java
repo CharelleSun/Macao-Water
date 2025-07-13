@@ -63,21 +63,21 @@ public class VerificationService {
         MediaType mediaType = MediaType.parse("multipart/form-data");
         RequestBody body = new MultipartBody.Builder()
                 .setType(MultipartBody.FORM)
-                .addFormDataPart("reqToken", "81f7b76a73584871bd6f4b097fe9daa7")
-                .addFormDataPart("lbSendFrom", "smtp@macaowater.com")
+                .addFormDataPart("reqToken", "*****REQTOKEN*****")
+                .addFormDataPart("lbSendFrom", "myCompanyEmail@Email.com")
                 .addFormDataPart("lbSendTo", adminEmail)
                 .addFormDataPart("lbSubject", subject)
                 .addFormDataPart("lbContent", content)
                 .addFormDataPart("saveAndSend", "true")
-                .addFormDataPart("encryptedData", "YVctitdq+q+s/Yzx9o2K7pFUq8KiFycWQEkV0zuJunHWjLQm9K0+pr8LUZA+g21x9FPrnW0/CycEvxXAtmBKoGxZA5+4cf8DzQgTKNbRkSUdUni9f4cDDFdD+7kaox3vIrPdGLg6j33vnZBrFts/u3vxYa7Ux0LtL3oJ+4ScrlU=")
+                .addFormDataPart("encryptedData", "*****ENCRYPTEDDATA*****")
                 .build();
 
         Request request = new Request.Builder()
-                .url("https://testeop.macaowater.com/eop/mssc/email/internship/msgSave")
+                .url("******URL********")
                 .method("POST", body)
-                .addHeader("User-Agent", "Apifox/1.0.0 (https://apifox.com)")
+                .addHeader("User-Agent", "Apifox/1.0.0 (*******APIFOX*******)")
                 .addHeader("Accept", "*/*")
-                .addHeader("Host", "testeop.macaowater.com")
+                .addHeader("Host", "****HOST****")
                 .addHeader("Connection", "keep-alive")
                 .build();
 
